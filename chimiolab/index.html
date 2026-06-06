@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChimioLab | Accueil</title>
+    <meta
+      name="description"
+      content="ChimioLab, laboratoire numérique du CRMEF Derb Ghallef pour les réactifs, matériels et travaux pratiques."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="index">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html" aria-label="Retour à l'accueil ChimioLab">
+          <span class="brand-mark">⚗️</span>
+          <span class="brand-text"><strong>Chimio</strong><span>Lab</span></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a class="nav-link" href="./index.html" data-nav-link="index">Accueil</a>
+          <a class="nav-link" href="./reactifs.html" data-nav-link="reactifs">Réactifs</a>
+          <a class="nav-link" href="./materiels.html" data-nav-link="materiels">Matériels</a>
+          <a class="nav-link" href="./tp.html" data-nav-link="tp">Travaux Pratiques</a>
+          <a class="nav-link" href="./about.html" data-nav-link="about">À propos</a>
+        </nav>
+
+        <a class="platform-link" href="/login">Accéder à la plateforme →</a>
+
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Ouvrir le menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" data-mobile-menu>
+      <div class="mobile-backdrop" data-menu-close></div>
+      <div class="mobile-panel">
+        <div>
+          <div class="mobile-top">
+            <a class="brand" href="./index.html">
+              <span class="brand-mark">⚗️</span>
+              <span class="brand-text"><strong>Chimio</strong><span>Lab</span></span>
+            </a>
+            <button class="mobile-close" type="button" data-menu-close aria-label="Fermer le menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 6l12 12M18 6L6 18" />
+              </svg>
+            </button>
+          </div>
+          <nav class="mobile-links" aria-label="Navigation mobile">
+            <a href="./index.html" data-nav-link="index">Accueil</a>
+            <a href="./reactifs.html" data-nav-link="reactifs">Réactifs</a>
+            <a href="./materiels.html" data-nav-link="materiels">Matériels</a>
+            <a href="./tp.html" data-nav-link="tp">Travaux Pratiques</a>
+            <a href="./about.html" data-nav-link="about">À propos</a>
+          </nav>
+        </div>
+        <a class="button button--primary" href="/login">Accéder à la plateforme →</a>
+      </div>
+    </div>
+
+    <main class="page-main">
+      <section class="hero">
+        <div class="container hero-shell">
+          <div class="hero-grid">
+            <div class="hero-content reveal">
+              <div class="eyebrow-badge">
+                <span class="pulse-dot"></span>
+                CRMEF Derb Ghallef — Laboratoire de Chimie
+              </div>
+              <h1 class="hero-title">Votre laboratoire, <em>simplifié</em></h1>
+              <p class="hero-subtitle">
+                Gérez vos produits chimiques, préparez vos séances TP et consultez
+                les fiches de sécurité — le tout en quelques clics.
+              </p>
+              <div class="hero-actions">
+                <a class="button button--primary" href="./reactifs.html">🧪 Voir les réactifs</a>
+                <a class="button button--outline" href="./tp.html">📋 Sessions TP</a>
+                <a class="button button--soft" href="/login">🔐 Se connecter</a>
+              </div>
+            </div>
+            <div class="hero-visual reveal">
+              <img
+                src="../src/assets/Chemistry Lab Equipment .jpg"
+                alt="Équipement de laboratoire de chimie"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head section-head--center reveal">
+            <h2>Que souhaitez-vous consulter ?</h2>
+          </div>
+
+          <div class="nav-card-grid">
+            <a class="nav-card reveal" href="./reactifs.html">
+              <div class="card-img">
+                <img src="../src/assets/reactifs.webp" alt="Réactifs chimiques" />
+              </div>
+              <h3>Réactifs chimiques</h3>
+              <p>Liste des produits, fiches de sécurité et pictogrammes GHS.</p>
+              <span class="card-link">Consulter →</span>
+            </a>
+
+            <a class="nav-card reveal" href="./materiels.html">
+              <div class="card-img">
+                <img src="../src/assets/materiels.jpg" alt="Matériels de laboratoire" />
+              </div>
+              <h3>Matériels de laboratoire</h3>
+              <p>Verrerie, instruments de mesure et équipements de sécurité.</p>
+              <span class="card-link">Consulter →</span>
+            </a>
+
+            <a class="nav-card reveal" href="./tp.html">
+              <div class="card-img">
+                <img src="../src/assets/Travaux partiques.jpg" alt="Travaux Pratiques" />
+              </div>
+              <h3>Travaux Pratiques</h3>
+              <p>Séances TP planifiées avec réactifs et matériels nécessaires.</p>
+              <span class="card-link">Consulter →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head section-head--center reveal">
+            <h2>Pourquoi ChimioLab ?</h2>
+            <p>Une plateforme pensée pour simplifier le quotidien des enseignants au laboratoire.</p>
+          </div>
+
+          <div class="nav-card-grid">
+            <div class="nav-card reveal">
+              <span class="icon-box" aria-hidden="true">🛡️</span>
+              <h3>Sécurité renforcée</h3>
+              <p>Accédez aux pictogrammes GHS et consignes de sécurité via QR code.</p>
+            </div>
+            <div class="nav-card reveal">
+              <span class="icon-box" aria-hidden="true">📝</span>
+              <h3>Préparation simplifiée</h3>
+              <p>Préparez vos séances TP avec matériel, réactifs et check-lists.</p>
+            </div>
+            <div class="nav-card reveal">
+              <span class="icon-box" aria-hidden="true">📊</span>
+              <h3>Suivi complet</h3>
+              <p>Suivez les stocks, la consommation et l'état des équipements.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>⚗️ ChimioLab</h3>
+          <p>Plateforme de gestion du laboratoire scolaire — CRMEF Derb Ghallef.</p>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <div class="footer-links">
+            <a href="./index.html">Accueil</a>
+            <a href="./reactifs.html">Réactifs</a>
+            <a href="./materiels.html">Matériels</a>
+            <a href="./tp.html">Travaux Pratiques</a>
+          </div>
+        </div>
+        <div>
+          <h3>Accès</h3>
+          <div class="footer-links">
+            <a href="/login">Se connecter à la plateforme</a>
+            <a href="./about.html">À propos du projet</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        ChimioLab © 2026 — Développé dans le cadre d'un Projet de Fin d'Études au CRMEF encadré par Pr Azzeddine Atibi
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

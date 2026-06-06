@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a3c5e;
+  --color-primary-dark: #122a42;
+  --color-primary-light: #245281;
+  --color-secondary: #2ecc71;
+  --color-danger: #e74c3c;
+  --color-warning: #f39c12;
+  --color-warning-light: #f1c40f;
+  --color-accent: #3498db;
+  --color-background: #f8f9fa;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-public-title: "DM Serif Display", serif;
+  --font-public-body: "DM Sans", system-ui, sans-serif;
+  --font-public-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: #1f2937;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}
+
+@layer utilities {
+  .font-public-title {
+    font-family: var(--font-public-title);
+  }
+
+  .font-public-body {
+    font-family: var(--font-public-body);
+  }
+
+  .font-public-mono {
+    font-family: var(--font-public-mono);
+  }
+
+  .public-grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .reveal-fade {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 700ms ease, transform 700ms ease;
+  }
+
+  .reveal-fade.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes public-float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
